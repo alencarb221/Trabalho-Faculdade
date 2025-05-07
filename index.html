@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alencar Baptistel</h1>
+        <h2>Minha biografia</h2>
+        <p>Meu nome é Alencar Baptistel, tenho 34 anos de idade, sou da cidade de São Miguel do Oeste, SC.
+            Sou estudante do curso Análise e Desenvolvimento de Software, Uninter. Gosto de curtir minha família, viajar, jogar videogame, entre outros hobbies.
+            Atualmente trabalho na empresa Seara alimentos, fábrica de ração como analista de agropecuária executando a função de expedição, destinando a ração de aves e suinos para o campo corforme tiver de demanda. <br>
+            Iniciei esse curso por que gosto de tecnologia e também por que quero mudar de área, atuar como programador e se conseguir em uma empresa que eu posso estar trabalhando de forma home office.
+        </p>
+
+        <button onclick="cliqueAqui()">Clique aqui para ver uma mensagem</button> 
+
+        <div id="mensagem"></div>
+        <p class="link">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a> - Site para encontrar muitos conteúdos sobre programação e tecnologia em geral.
+        </p>
+    </header>
+
+    <main>
+        
+            <h2>Hobbies</h2>
+            <p>Abaixo tem uma pequena lista com algumas atividades que eu gosto de fazer quando não estou estudando ou trabalhando:</p>
+        
+            <ul>
+                <li>Academia</li>
+                <li>Jogar Videogame</li>
+                <li>Assistir filme/série</li>
+            </ul>
+            <img class="setup" src="Imagens/setup game.webp">
+            <legend>Figura:A imagem acima está fazendo a ilustração de um setup gamer</legend>
+        
+        <br><br>
+        <h2>Paises onde eu tenho interesse em conhecer:.</h2>
+        <table>
+               <thead>
+                <th>Pais:</th>
+                <th>Imagem:</th>
+               </thead>
+               <tr>
+                <th>Egito</th>
+                <th><img src="Imagens/Egito.jfif"></th>
+               </tr>
+               <tr>
+                <th>Estados Unidos</th>
+                <th><img src="Imagens/EUA.jfif"></th>
+               </tr>
+               <tr>
+                <th>Chile</th>
+                <th><img src="Imagens/Chile.jfif"></th>
+               </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por <strong>Alencar Baptistel</strong> para a disciplina de <strong>Desenvolvimento de Software</strong></p>
+    </footer>
+
+    <script>
+
+        var div = document.getElementById('mensagem')
+        
+        function cliqueAqui() {
+           
+            if (div.innerText === '') {
+            div.innerText = 'Acredite em si mesmo, porque o universo confia em você.'
+           } else {
+            div.innerText = ''
+           }
+        }
+    </script>
+    
+    
+</body>
+</html>
